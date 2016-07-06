@@ -12,23 +12,23 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="{{ Request::is('tenant/applications/enquiry', 'tenant/applications/*/apply_offer', 'tenant/applications/*/cancel_application') ? 'active' : '' }}"><a href="{{ route('applications.enquiry.index') }}">Enquiry</a></li>
+        <li class="{{ Request::is('tenant/application/enquiry', 'tenant/application/*/apply_offer', 'tenant/application/*/cancel_application') ? 'active' : '' }}"><a href="{{ route('application.enquiry.index') }}">Enquiry</a></li>
         
-        <li class=" {{ Request::is('tenant/applications/offer_letter_processing', 'tenant/applications/*/offer_letter_received') ? 'active' : '' }}"><a href="{{ route('applications.offer_letter_processing.index')}}">Offer letter processing</a></li>
+        <li class=" {{ Request::is('tenant/application/offer_letter_processing', 'tenant/application/*/offer_letter_received') ? 'active' : '' }}"><a href="{{ route('application.offer_letter_processing.index')}}">Offer letter processing</a></li>
         
-        <li class="{{ Request::is('tenant/applications/offer_letter_issued', 'tenant/applications/*/coe_processing') ? 'active' : ''}}" ><a href="{{ route('applications.offer_letter_issued.index') }}">Offer letter issued</a></li>
+        <li class="{{ Request::is('tenant/application/offer_letter_issued', 'tenant/application/*/coe_processing') ? 'active' : ''}}" ><a href="{{ route('application.offer_letter_issued.index') }}">Offer letter issued</a></li>
         
-        <li class="{{ Request::is('tenant/applications/coe_processing', 'tenant/applications/*/coe_issued') ? 'active' : ''}}" ><a href="#">COE processing</a></li>
+        <li class="{{ Request::is('tenant/application/coe_processing', 'tenant/application/*/coe_issued') ? 'active' : ''}}" ><a href="#">COE processing</a></li>
         
-        <li class="{{ Request::is('tenant/applications/coe_issued') ? 'active' : ''}}" ><a href="#">COE issued</a></li>
+        <li class="{{ Request::is('tenant/application/coe_issued') ? 'active' : ''}}" ><a href="#">COE issued</a></li>
         
-        <li class="{{ Request::is('tenant/applications/enrolled') ? 'active' : ''}}" ><a href="#">Enrolled</a></li>
+        <li class="{{ Request::is('tenant/application/enrolled') ? 'active' : ''}}" ><a href="#">Enrolled</a></li>
         
-        <li class="{{ Request::is('tenant/applications/completed') ? 'active' : ''}}" ><a href="#">Completed</a></li>
+        <li class="{{ Request::is('tenant/application/completed') ? 'active' : ''}}" ><a href="#">Completed</a></li>
         
-        <li class="{{ Request::is('tenant/applications/cancelled') ? 'active' : ''}}" ><a href="#">Cancelled</a></li>
+        <li class="{{ Request::is('tenant/application/cancelled') ? 'active' : ''}}" ><a href="#">Cancelled</a></li>
         
-        <li class="{{ Request::is('tenant/applications/advanced_search') ? 'active' : ''}}" ><a href="#">Advanced search</a></li>
+        <li class="{{ Request::is('tenant/application/advanced_search') ? 'active' : ''}}" ><a href="#">Advanced search</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

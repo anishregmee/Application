@@ -10,22 +10,18 @@
     <div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h1>{{ $applications->first_name }} - <small>Offer Letter Received</small></h1>
-				<br>
+				<h1 class="margin-down">{{ $applications->first_name }} - <small>Offer Letter Received</small></h1>
+				
 
-				@include('Tenant::applications/partials/navbar')
+				@include('Tenant::application/partial/navbar')
 
-				<br>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<div class="box box-primary">
+				<div class="box box-primary margin-up">
 					<div class="box-body">
 						{!! Form::model($applications,[
 							'class'=>'form-horizontal',
+							'files'=>true,
 							'method'=>'PUT',
-							'route'=>['applications.offer_letter.update',$applications->course_application_id]
+							'route'=>['application.offer_letter.update',$applications->course_application_id]
 							])!!}
 
 					<div class="form-group">
